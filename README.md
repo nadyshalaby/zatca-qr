@@ -4,7 +4,7 @@
   <br/>
   </h1>
   <p>
-    An implementation of Saudi Arabia ZATCA's E-Invoicing requirements, processes, and standards in TypeScript. <br/>
+    An implementation of Saudi Arabia ZATCA's E-Invoicing requirements, processes, and standards in PHP. <br/>
   </p>
   Read the <a href="/docs">documentation PDFs</a> or <a href="https://zatca.gov.sa/en/E-Invoicing/SystemsDevelopers/Pages/TechnicalRequirementsSpec.aspx">Systems Developers</a> for more details.
   <br/>
