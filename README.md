@@ -15,9 +15,6 @@
 <a href="https://github.com/nadyshalaby">
 <img src="https://img.shields.io/badge/maintainer-nadyshalaby-blue"/>
 </a>
-<a href="https://badge.fury.io/js/zatca-xml-js">
-<img src="https://badge.fury.io/js/zatca-xml-js.svg/?v=0.1.8"/>
-</a>
   </p>
 </div>
 
