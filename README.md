@@ -56,21 +56,21 @@ View full example at <a href="/phase-1.php">phase-1.php</a> and <a href="/phase-
 
 ```php
 // New Invoice and EGS Unit
-$egs = new \ZATCA\EGS($egs_unit);
+$egs = new \ZATCA\EGS($egsUnit);
 
 $egs->production = false;
 
 // New Keys & CSR for the EGS
-list($private_key, $csr) = $egs->generateNewKeysAndCSR('solution_name');
+list($privateKey, $csr) = $egs->generateNewKeysAndCSR('solution_name');
 
 // Issue a new compliance cert for the EGS
-list($request_id, $binary_security_token, $secret) = $egs->issueComplianceCertificate('123345', $csr);
+list($requestId, $binarySecurityToken, $secret) = $egs->issueComplianceCertificate('123345', $csr);
 
 // Sign invoice
-list($signed_invoice_string, $invoice_hash, $qr) = $egs->signInvoice($invoice, $egs_unit, $binary_security_token, $private_key);
+list($signedInvoiceString, $invoiceHash, $qr) = $egs->signInvoice($invoice, $egsUnit, $binarySecurityToken, $privateKey);
 
 // Check invoice compliance
-echo($egs->checkInvoiceCompliance($signed_invoice_string, $invoice_hash, $binary_security_token, $secret));
+echo($egs->checkInvoiceCompliance($signedInvoiceString, $invoiceHash, $binarySecurityToken, $secret));
 echo PHP_EOL;
 ```
 
