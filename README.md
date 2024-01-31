@@ -42,9 +42,14 @@ supported.
 
 # Installation
 
-```
-php -S localhost:8000
-```
+1. Download the package from github
+2. Run `composer update` or `composer install` to install dependencies.
+3. Run a local server to view the examples using `php -S localhost:8000`
+4. Open http://localhost:8000/phase-1.php in your browser.
+5. Open http://localhost:8000/phase-2.php in your browser.
+6. Download 
+7. Download the ZATCA QR Reader App from Google Play Store. <a href="https://play.google.com/store/apps/details?id=com.posbankbh.einvoiceqrreader&pcampaignid=web_share">**Zatca QR ReaderApp**</a>
+8. Scan the QR code generated in the example.
 
 # Usage
 
