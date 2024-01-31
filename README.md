@@ -103,7 +103,7 @@ echo PHP_EOL;
 
 # Notice of Non-Affiliation and Disclaimer
 
-`zatca-qr` is not affiliated, associated, authorized, endorsed by, or in any way officially connected with ZATCA (
+`zatca-qr` is influenced by <a href="https://github.com/mudassaralichouhan/zatca-xml-php">`zatca-xml-php`</a> that not affiliated, associated, authorized, endorsed by, or in any way officially connected with ZATCA (
 Zakat, Tax and Customs Authority), or any of its subsidiaries or its affiliates. The official ZATCA website can be found
 at https://zatca.gov.sa.
 

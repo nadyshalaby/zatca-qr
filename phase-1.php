@@ -18,7 +18,7 @@ use Endroid\QrCode\ErrorCorrectionLevel;
 // Data for QR Code
 // $dataString = "Seller Name,VAT Number,2024-01-29 10:00:00,Invoice Total,VAT Total";
 $generatedString = GenerateQrCode::fromArray([
-    new Seller('Suplift'), // seller name        
+    new Seller('Qr'), // seller name        
     new TaxNumber('323457892389823'), // seller tax number
     new InvoiceDate('2021-07-12T14:25:09Z'), // invoice date as Zulu ISO8601 @see https://en.wikipedia.org/wiki/ISO_8601
     new InvoiceTotalAmount('100.00'), // invoice total amount
@@ -40,7 +40,7 @@ $logo = Logo::create(__DIR__ . '/assets/logo.png')
     ->setResizeToWidth(50)
     ->setPunchoutBackground(true);
 
-$label = Label::create('Suplift Phase-1')
+$label = Label::create('Qr Phase-1')
 ->setTextColor(new Color(255, 0, 0));
 
 $result = $writer->write($qrCode, $logo, $label);

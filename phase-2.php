@@ -34,7 +34,7 @@ $egs_unit = [
     'custom_id' => 'EGS1-886431145',
     'model' => 'IOS',
     'CRN_number' => '454634645645654',
-    'VAT_name' => 'Suplift',
+    'VAT_name' => 'Qr',
     'VAT_number' => '301121971500003',
     'location' => [
         'city' => 'Khobar',
@@ -70,7 +70,7 @@ $egs = new EGS($egs_unit);
 $egs->production = false;
 
 // New Keys & CSR for the EGS
-list($private_key, $csr) = $egs->generateNewKeysAndCSR('Suplift');
+list($private_key, $csr) = $egs->generateNewKeysAndCSR('Qr');
 
 // Issue a new compliance cert for the EGS
 list($request_id, $binary_security_token, $secret) = $egs->issueComplianceCertificate('123345', $csr);
@@ -97,7 +97,7 @@ $logo = Logo::create(__DIR__ . '/assets/logo.png')
     ->setResizeToWidth(50)
     ->setPunchoutBackground(true);
 
-$label = Label::create('Suplift Phase-2')
+$label = Label::create('Qr Phase-2')
     ->setTextColor(new Color(255, 0, 0));
 
 $result = $writer->write($qrCode, $logo, $label);
